@@ -1,0 +1,223 @@
+/* Rida Hameed — academic website */
+:root {
+  --ink: #1f2a2e;
+  --muted: #5b6b70;
+  --accent: #1e6f5c;       /* deep green — environmental economics */
+  --accent-dark: #14503f;
+  --accent-light: #e8f2ee;
+  --border: #e3e8e8;
+  --bg: #fdfdfc;
+  --card: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.65;
+  font-size: 16.5px;
+}
+
+h1, h2, h3, h4, .site-name { font-family: 'Lora', Georgia, serif; }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-dark); text-decoration: underline; }
+
+.container { max-width: 900px; margin: 0 auto; padding: 0 1.4rem; }
+
+/* ---------- Header / nav ---------- */
+header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 1rem 0;
+}
+
+.site-name {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.site-name:hover { text-decoration: none; color: var(--accent); }
+
+nav { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+
+nav a {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+}
+nav a:hover { color: var(--accent); background: var(--accent-light); text-decoration: none; }
+nav a.active { color: var(--accent-dark); background: var(--accent-light); }
+
+/* ---------- Page layout ---------- */
+main { padding: 2.75rem 0 3.5rem; }
+
+.page-title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.page-subtitle { color: var(--muted); margin-bottom: 2.2rem; }
+
+section { margin-bottom: 2.6rem; }
+
+h2.section-heading {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  border-bottom: 2px solid var(--accent-light);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.1rem;
+}
+
+/* ---------- About page ---------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.portrait {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+.portrait-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 10px;
+  background: linear-gradient(160deg, var(--accent-light), #d3e6df);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 3.2rem;
+  color: var(--accent);
+  border: 1px solid var(--border);
+}
+
+.contact-block {
+  margin-top: 1.1rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+.contact-block p { margin-bottom: 0.3rem; }
+
+.social-links { margin-top: 0.8rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.social-links a {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--card);
+}
+.social-links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+.jm-banner {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  padding: 0.85rem 1.1rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.3rem 0;
+  font-size: 0.97rem;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.card .tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  background: var(--accent-light);
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.55rem;
+}
+
+.card h3 { font-size: 1.12rem; margin-bottom: 0.45rem; }
+.card p { font-size: 0.95rem; color: var(--muted); }
+.card .links { margin-top: 0.7rem; font-size: 0.9rem; }
+.card .links a { margin-right: 1.1rem; font-weight: 500; }
+
+/* ---------- Lists (research, teaching, writing) ---------- */
+.entry { margin-bottom: 1.35rem; }
+.entry h3 { font-size: 1.08rem; margin-bottom: 0.2rem; }
+.entry .meta { font-size: 0.88rem; color: var(--muted); }
+.entry .desc { font-size: 0.95rem; margin-top: 0.3rem; }
+.entry .coauthors { font-style: italic; }
+
+.pub-list li, .plain-list li { margin-bottom: 0.85rem; font-size: 0.96rem; }
+.pub-list, .plain-list { padding-left: 1.2rem; }
+
+.teach-role { margin-bottom: 1.5rem; }
+.teach-role h3 { font-size: 1.06rem; }
+.teach-role .when { font-size: 0.85rem; color: var(--muted); font-weight: 400; }
+.teach-role ul { padding-left: 1.2rem; margin-top: 0.3rem; font-size: 0.95rem; color: var(--muted); }
+
+.writing-item { display: flex; justify-content: space-between; gap: 1rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); font-size: 0.96rem; }
+.writing-item .year { color: var(--muted); white-space: nowrap; font-size: 0.88rem; }
+
+/* ---------- CV page ---------- */
+.cv-frame {
+  width: 100%;
+  height: 82vh;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+.btn:hover { background: var(--accent-dark); color: #fff; text-decoration: none; }
+
+/* ---------- Footer ---------- */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.4rem 0 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 700px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .portrait, .portrait-placeholder { max-width: 240px; }
+  .header-inner { flex-direction: column; align-items: flex-start; }
+}
