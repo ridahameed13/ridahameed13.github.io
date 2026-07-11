@@ -7,6 +7,38 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .writing-card {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .writing-card .thumb, .writing-card .thumb-fallback {
+      width: 150px;
+      height: 100px;
+      border-radius: 8px;
+      flex-shrink: 0;
+      border: 1px solid var(--border);
+    }
+    .writing-card .thumb { object-fit: cover; }
+    .writing-card .thumb-fallback {
+      background: linear-gradient(160deg, var(--accent-light), #d3e6df);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.4rem;
+    }
+    .writing-card .info { flex: 1; }
+    .writing-card h3 { font-size: 1.02rem; margin-bottom: 0.15rem; font-weight: 600; }
+    .writing-card .meta { font-size: 0.86rem; color: var(--muted); }
+    @media (max-width: 600px) {
+      .writing-card .thumb, .writing-card .thumb-fallback { width: 100px; height: 70px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -25,45 +57,205 @@
 
 <main class="container">
   <h1 class="page-title">Policy &amp; Public Writing</h1>
-  <p class="page-subtitle">Data journalism, policy commentary, and public writing on climate, gender, health, and development.</p>
 
   <section>
     <h2 class="section-heading">Data &amp; Spatial Analysis</h2>
-    <div class="writing-item"><span>"Climate Cartography: Mapping Pakistan's Temperature in 2024" — <em>Medium</em></span><span class="year">2024</span></div>
-    <div class="writing-item"><span>"Mapping Air Quality with Spatial Data: PM2.5 Pollution Analysis in Bangladesh" — <em>Medium</em></span><span class="year">2024</span></div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://miro.medium.com/v2/da:true/resize:fit:1200/0*fRh6-WrmFo_joWuA" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://medium.com/@RidaHameed13/climate-cartography-mapping-pakistans-temperature-in-2024-07b625b7248e">Climate Cartography: Mapping Pakistan's Temperature in 2024</a></h3>
+        <p class="meta"><em>Medium</em> · 2024</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://miro.medium.com/v2/resize:fit:1200/1*jYlCXBSSjnmuhoEym6dGeA.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://medium.com/@RidaHameed13/mapping-air-quality-with-spatial-data-pm2-5-pollution-analysis-in-bangladesh-a63f9ba09cee">Mapping Air Quality with Spatial Data: PM2.5 Pollution Analysis in Bangladesh</a></h3>
+        <p class="meta"><em>Medium</em> · 2024</p>
+      </div>
+    </div>
   </section>
 
   <section>
     <h2 class="section-heading">Policy Writing</h2>
-    <div class="writing-item"><span>"The Care Infrastructure — Measuring Gaps and Identifying Resources for Closing Them" — <em>Institute for Women's Policy Research (IWPR)</em></span><span class="year">2024</span></div>
-    <div class="writing-item"><span>"Status of Drinking Water in Households in Pakistan" — <em>Open Data Pakistan Blog</em></span><span class="year">2021</span></div>
-    <div class="writing-item"><span>"Status of Childhood Immunization in Pakistan" — <em>Open Data Pakistan Blog</em></span><span class="year">2021</span></div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://img.youtube.com/vi/BxeDH4AoiKY/hqdefault.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://www.youtube.com/watch?v=BxeDH4AoiKY">The Care Infrastructure — Measuring Gaps and Identifying Resources for Closing Them</a></h3>
+        <p class="meta"><em>Institute for Women's Policy Research (IWPR)</em> · 2024</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <div class="thumb-fallback">ODP</div>
+      <div class="info">
+        <h3><a href="https://opendata.com.pk/blog/status-of-drinking-water-in-households">Status of Drinking Water in Households in Pakistan</a></h3>
+        <p class="meta"><em>Open Data Pakistan Blog</em> · 2021</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <div class="thumb-fallback">ODP</div>
+      <div class="info">
+        <h3><a href="https://opendata.com.pk/blog/status-of-childhood-immunization-in-pakistan">Status of Childhood Immunization in Pakistan</a></h3>
+        <p class="meta"><em>Open Data Pakistan Blog</em> · 2021</p>
+      </div>
+    </div>
   </section>
 
   <section>
     <h2 class="section-heading">Op-Eds — The Express Tribune</h2>
-    <div class="writing-item"><span>"Pakistan's Gender Disparity Crisis"</span><span class="year">2022</span></div>
-    <div class="writing-item"><span>"Pakistan Must Tackle its Growing Maternal Nutrition Problem"</span><span class="year">2022</span></div>
-    <div class="writing-item"><span>"Post Pandemic Economic Recovery"</span><span class="year">2021</span></div>
-    <div class="writing-item"><span>"What is the COVID-19 Vaccine Distribution Plan?"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"The Importance of a Temporary Basic Income During COVID-19"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"The Post Pandemic Inequalities"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"How has COVID-19 Impacted Gender Equality in the Workforce?"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"Economic Recovery in Asia Post COVID-19"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"Recovering from the Great Lockdown"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"The Impact of COVID-19 on Refugees"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"Assessing the Socio-Economic Impact of COVID-19 in Pakistan"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"COVID-19 and the Global Economy"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"How to Ensure Food Security in Africa During COVID-19"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"COVID-19 and the Perils of Air Travel"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"COVID-19 and the Looming Food Crisis"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"How will COVID-19 Impact Global Poverty Levels?"</span><span class="year">2020</span></div>
-    <div class="writing-item"><span>"The Psychological Impact of COVID-19 on Youngsters"</span><span class="year">2020</span></div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/651129-genderrightsx-13881180171646554568-0/651129-genderrightsx-13881180171646554568-0-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/97614/pakistans-gender-disparity-crisis">Pakistan's Gender Disparity Crisis</a></h3>
+        <p class="meta">2022</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/Cover1656931007-0/Cover1656931007-0-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/97606/pakistan-must-tackle-its-growing-maternal-nutrition-problem">Pakistan Must Tackle its Growing Maternal Nutrition Problem</a></h3>
+        <p class="meta">2022</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/Cover1625554764-0/Cover1625554764-0-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/97420/the-post-pandemic-economic-recovery">Post Pandemic Economic Recovery</a></h3>
+        <p class="meta">2021</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/what-is-the-covid-19-vaccine-distribution-plan1608821602-0/what-is-the-covid-19-vaccine-distribution-plan1608821602-0-64034-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/97247/what-is-the-covid-19-vaccine-distribution-plan">What is the COVID-19 Vaccine Distribution Plan?</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/kl1595786805-0/kl1595786805-0-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/97108/the-importance-temporary-basic-income-during-covid-19">The Importance of a Temporary Basic Income During COVID-19</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/k1595063060-0/k1595063060-0-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/97099/post-pandemic-inequalities">The Post Pandemic Inequalities</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/kl1594630668-0/kl1594630668-0-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/97091/how-has-covid-19-impacted-gender-equality-in-the-workforce">How has COVID-19 Impacted Gender Equality in the Workforce?</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/11593691884-0/11593691884-0-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/97081/economic-recovery-in-asia-post-covi-19">Economic Recovery in Asia Post COVID-19</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/97028-hjjpg-1593162294/97028-hjjpg-1593162294-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/97028/recovering-form-the-great-lockdown">Recovering from the Great Lockdown</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/96986-asyriangirlwearingamedicalmaskasaprecautionagainstcoronaviruscovidpandemicisseenatarefugeecampwherethousandsofdisplacedsyriansshelterjpg-1592900283/96986-asyriangirlwearingamedicalmaskasaprecautionagainstcoronaviruscovidpandemicisseenatarefugeecampwherethousandsofdisplacedsyriansshelterjpg-1592900283-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/96986/the-impact-of-covid-19-on-refugees">The Impact of COVID-19 on Refugees</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/96954-yyjpg-1592557731/96954-yyjpg-1592557731-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/96954/assessing-the-socio-economic-impact-of-covid-19-in-pakistan">Assessing the Socio-Economic Impact of COVID-19 in Pakistan</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/96785-jpg-1591865965/96785-jpg-1591865965-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/96785/covid-19-and-the-global-economy">COVID-19 and the Global Economy</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/96725-afrjpg-1591598159/96725-afrjpg-1591598159-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/96725/how-to-ensure-food-security-in-africa-during-covid-19">How to Ensure Food Security in Africa During COVID-19</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/96560-jpg-1590924140/96560-jpg-1590924140-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/96560/covid-19-and-the-perils-of-air-travel">COVID-19 and the Perils of Air Travel</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/96431-normjpg-1590060716/96431-normjpg-1590060716-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/96431/covid-19-and-the-looming-food-crisis">COVID-19 and the Looming Food Crisis</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/96290-jpg-1589527234/96290-jpg-1589527234-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/96290/how-will-covid-19-impact-global-poverty-levels">How will COVID-19 Impact Global Poverty Levels?</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://i.tribune.com.pk/media/images/96017-erjpg-1588591685/96017-erjpg-1588591685-640x480.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+      <div class="info">
+        <h3><a href="https://tribune.com.pk/article/96017/the-psychological-impact-of-covid-19-on-youngsters">The Psychological Impact of COVID-19 on Youngsters</a></h3>
+        <p class="meta">2020</p>
+      </div>
+    </div>
   </section>
 
   <section>
     <h2 class="section-heading">Other</h2>
-    <div class="writing-item"><span>"NEST Methodologies: Multidimensional Aspects," with Sindhu, Charitarth et al., 1st ed. — <em>CCLP Worldwide</em></span><span class="year">2017</span></div>
+
+    <div class="writing-card">
+      <img class="thumb" src="https://books.google.com/books/content?id=C4JvDwAAQBAJ&printsec=frontcover&img=1&zoom=1" alt="" loading="lazy" onerror="this.outerHTML='<div class=\'thumb-fallback\'>NEST</div>'">
+      <div class="info">
+        <h3><a href="https://play.google.com/store/books/details/NEST_METHODOLOGIES_Multidimensional_Aspects?id=C4JvDwAAQBAJ">NEST Methodologies: Multidimensional Aspects</a></h3>
+        <p class="meta">with Sindhu, Charitarth et al., 1st ed. · <em>CCLP Worldwide</em> · 2017</p>
+      </div>
+    </div>
   </section>
 
 </main>
